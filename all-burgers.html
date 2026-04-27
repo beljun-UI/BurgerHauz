@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu | Burger Hauz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="all-burgers.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/png" href="src/images/burger_hauz.png">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="logo">
+                <img src="src/images/burger_hauz.png" alt="Burger Hauz Logo" class="logo-icon"> Burger Hauz
+            </div>
+            <nav class="main-nav">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#team" class="nav-link">Our Team</a>
+                <a href="index.html#products" class="nav-link active">Products</a>
+                <a href="index.html#contact" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <main class="all-burgers-main">
+            <section class="content-section all-products-section">
+                <div class="container">
+                    <div class="menu-header-flex">
+                        <div class="menu-text-content">
+                            <h1 class="page-title">Menu</h1>
+                            <p class="subtitle">
+                                What are you craving for today?
+                            </p>
+                        </div>
+                        <div class="menu-icons">
+                            <a href="#" class="menu-icon-btn" title="Filter Menu">
+                                <i class="fas fa-filter"></i>
+                            </a>
+                            <a href="#" class="menu-icon-btn cart-icon" title="View Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="full-product-grid">
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="1"
+                            data-name="The Classic Haven"
+                            data-desc="Beef patty, cheddar, lettuce, tomato, house sauce."
+                            data-price="350.00"
+                            data-img="src/images/classic_haven.png"
+                            id="test-modal-btn"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/classic_haven.png" alt="The Classic Haven Burger">
+                                <span class="price-badge">₱250.00 off</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 title="The Classic Haven">The Classic Haven</h3>
+                                <p>Beef patty, cheddar, lettuce, tomato, house sauce.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.3
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱350.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="2"
+                            data-name="BBQ Bacon Bliss"
+                            data-desc="Smoked patty, crispy bacon, onion ring, tangy BBQ sauce."
+                            data-price="400.00"
+                            data-img="src/images/bbq_bacon.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/bbq_bacon.png" alt="BBQ Bacon Bliss Burger">
+                                <span class="price-badge">₱250.00 off</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 title="BBQ Bacon Bliss">BBQ Bacon Bliss</h3>
+                                <p>Smoked patty, crispy bacon, onion ring, tangy BBQ sauce.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.3
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱400.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="3"
+                            data-name="Garden Patty Delight"
+                            data-desc="Plant-based patty, avocado, sprouts, garlic aioli."
+                            data-price="300.00"
+                            data-img="src/images/garden_patty.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/garden_patty.png" alt="Garden Patty Delight Veggie Burger">
+                                <span class="price-badge">₱150.00 off</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Garden Patty Delight">Garden Patty Delight</h3>
+                                <p>Plant-based patty, avocado, sprouts, garlic aioli.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.5
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱300.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="4"
+                            data-name="Spicy Volcano"
+                            data-desc="Double patty, jalapeños, pepper jack, and fiery sauce."
+                            data-price="450.00"
+                            data-img="src/images/spicy_volcano.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/spicy_volcano.png" alt="Spicy Volcano Burger">
+                                <span class="price-badge new-badge">New!</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Spicy Volcano">Spicy Volcano</h3>
+                                <p>Double patty, jalapeños, pepper jack, and fiery sauce.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.7
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱450.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="5"
+                            data-name="Mushroom Swiss Melt"
+                            data-desc="Juicy beef, caramelized mushrooms, and melted Swiss cheese."
+                            data-price="380.00"
+                            data-img="src/images/mushroom_swiss.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/mushroom_swiss.png" alt="Mushroom Swiss Melt">
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Mushroom Swiss Melt">Mushroom Swiss Melt</h3>
+                                <p>Juicy beef, caramelized mushrooms, and melted Swiss cheese.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.2
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱380.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="6"
+                            data-name="Chicken Delight"
+                            data-desc="Crispy chicken fillet, cool coleslaw, and a honey-mustard drizzle."
+                            data-price="320.00"
+                            data-img="src/images/chicken_delight.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/chicken_delight.png" alt="The Chicken Delight">
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Chicken Delight">Chicken Delight</h3>
+                                <p>Crispy chicken fillet, cool coleslaw, and a honey-mustard drizzle.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.6
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱320.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="7"
+                            data-name="Hawai'ian Delight"
+                            data-desc="Beef patty, grilled pineapple, ham, and a sweet teriyaki glaze."
+                            data-price="390.00"
+                            data-img="src/images/hawaiian_delight.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/hawaiian_delight.png" alt="The Hawai'ian Delight">
+                                <span class="price-badge new-badge">Sweet & Savory</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Hawai'ian Delight">Hawai'ian Delight</h3>
+                                <p>Beef patty, grilled pineapple, ham, and a sweet teriyaki glaze.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.0
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱390.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="8"
+                            data-name="Sunrise Burger"
+                            data-desc="The ultimate breakfast burger: patty, fried egg, bacon, and hash brown."
+                            data-price="420.00"
+                            data-img="src/images/sunrise_burger.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/sunrise_burger.png" alt="The Sunrise Burger">
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Sunrise Burger">Sunrise Burger</h3>
+                                <p>The ultimate breakfast burger: patty, fried egg, bacon, and hash brown.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.8
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱420.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="9"
+                            data-name="Seafood Stack"
+                            data-desc="Crispy shrimp patty, fresh cilantro, creamy lemon aioli, and coleslaw."
+                            data-price="480.00"
+                            data-img="src/images/seafood_stack.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/seafood_stack.png" alt="The Seafood Stack">
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Seafood Stack">Seafood Stack</h3>
+                                <p>Crispy shrimp patty, fresh cilantro, creamy lemon aioli, and coleslaw.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.4
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱480.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="10"
+                            data-name="Triple Stack Mega"
+                            data-desc="Three juicy patties, double cheese, caramelized onions, and secret sauce."
+                            data-price="550.00"
+                            data-img="src/images/triple_stack.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/triple_stack.png" alt="Triple Stack Mega Burger">
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Triple Stack Mega">Triple Stack Mega</h3>
+                                <p>Three juicy patties, double cheese, caramelized onions, and secret sauce.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.9
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱550.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="11"
+                            data-name="Pesto Chicken"
+                            data-desc="Grilled chicken, mozzarella, fresh basil pesto, and sun-dried tomatoes."
+                            data-price="370.00"
+                            data-img="src/images/pesto_chicken.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/pesto_chicken.png" alt="Pesto Chicken Burger">
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Pesto Chicken">Pesto Chicken</h3>
+                                <p>Grilled chicken, mozzarella, fresh basil pesto, and sun-dried tomatoes.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.1
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱370.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="product-card open-modal-btn"
+                            data-id="12"
+                            data-name="Truffle Dream"
+                            data-desc="Premium beef patty, truffle aioli, sautéed mushrooms, and arugula."
+                            data-price="620.00"
+                            data-img="src/images/truffle_dream.png"
+                        >
+                            <div class="product-image-wrapper">
+                                <img src="src/images/truffle_dream.png" alt="Truffle Dream Burger">
+                                <span class="price-badge new-badge">New!</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 title="Truffle Dream">Truffle Dream</h3>
+                                <p>Premium beef patty, truffle aioli, sautéed mushrooms, and arugula.</p>
+                                <div class="product-meta">
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        4.6
+                                    </div>
+                                    <div class="product-price-atc">
+                                        <span class="price-value">₱620.00</span>
+                                        <button class="btn primary-btn btn-sm">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="modal-body-flex">
+                    <div class="modal-image-wrapper">
+                        <img id="modal-product-image" src="" alt="Product Image">
+                    </div>
+                    <div class="modal-details">
+                        <h2 id="modal-product-title"></h2>
+                        <p id="modal-product-description"></p>
+                        <div class="modal-options">
+                            <h3>Quantity</h3>
+                            <div class="quantity-control">
+                                <button id="qty-minus" class="qty-btn">-</button>
+                                <input
+                                    type="number"
+                                    id="qty-input"
+                                    value="1"
+                                    min="1"
+                                    max="99"
+                                    readonly
+                                >
+                                <button id="qty-plus" class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer-price">
+                            <span id="modal-product-price-display"></span>
+                            <button class="btn primary-btn" id="modal-add-to-cart-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="successModal" class="modal success-modal">
+            <div class="modal-content success-content">
+                <span class="close-btn success-close-btn">&times;</span>
+                <div class="success-body">
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <h2 class="success-title">Item Added to Cart!</h2>
+                    <p id="success-message" class="success-message">1 x Product Name successfully added to your order!</p>
+                    <div class="success-actions">
+                        <button class="btn secondary-btn" id="viewCartBtn">View Cart</button>
+                        <button class="btn primary-btn success-close-btn">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cartSidebar" class="cart-sidebar">
+            <div class="cart-header">
+                <h2 class="cart-title">Your Cart</h2>
+                <button class="cart-close-btn">&times;</button>
+            </div>
+            <div class="cart-items-container" id="cartItemsContainer">
+                <div class="empty-cart-message" id="emptyCartMessage">
+                    Your cart is empty. Start adding some delicious burgers!
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <span class="total-label">Total:</span>
+                    <span class="total-price" id="cartTotalPrice">₱0.00</span>
+                </div>
+                <button class="btn primary-btn checkout-btn" id="checkoutBtn" disabled>
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+        <div id="cartOverlay" class="cart-overlay"></div>
+        <div id="checkoutSuccessModal" class="modal success-modal checkout-success-modal">
+            <div class="modal-content success-content">
+                <span class="close-btn success-close-btn" id="checkoutSuccessCloseBtn">&times;</span>
+                <div class="success-body">
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <h2 class="success-title">Order Placed Successfully!</h2>
+                    <p id="checkout-success-message" class="success-message">
+                        Thank you for your order! Your delicious burgers will be prepared and delivered shortly.
+                    </p>
+                    <div class="success-actions">
+                        <button class="btn primary-btn" id="continueShoppingBtn">
+                            Continue Shopping
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Burger Hauz. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="all-burgers-script.js"></script>
+    </body>
+</html>
